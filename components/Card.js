@@ -13,7 +13,7 @@ import styles from "../styles/Home.module.css"
 
 function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
 	const variant = useBreakpointValue({
-		base: "row",
+		base: "column",
 		xl: "row",
 		lg: "row",
 		md: "row",
@@ -27,6 +27,8 @@ function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
 				borderWidth='1px'
 				borderRadius='lg'
 				overflow='hidden'
+				// alignItems='center'
+				// justifyContent='center'
 				className={styles.card}
 				flexDirection={variant}
 			>
@@ -38,7 +40,7 @@ function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
 						alt='Project Image'
 					/>
 				</Flex>
-				<Flex flex='1' flexDirection='column' p={2} width='400px'>
+				<Flex flex='1' flexDirection='column' p={2} maxWidth='400px'>
 					<Heading size='md'>{heading}</Heading>
 					<Text noOfLines={3} isTruncated>
 						{description}
