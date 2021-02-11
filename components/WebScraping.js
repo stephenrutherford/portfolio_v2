@@ -20,7 +20,7 @@ function WebScraping() {
 	}
 
 	return (
-		<Flex mw='750px' flexDirection='column'>
+		<Flex maxW='750px' flexDirection='column'>
 			<VStack mt={10} spacing={6} alignItems='left'>
 				<Heading>Web Scraping</Heading>
 				<Image
