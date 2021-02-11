@@ -46,7 +46,7 @@ export default function Home() {
 						link='dashboard'
 						image='images/projects/dashboard/thumb.svg'
 						heading='Fraud Dashboard'
-						description='A fraud metrics and sales dashboard created with Next.js. Designed as
+						description='	A fraud metrics and sales dashboard created with Next.js. Designed as
 						a data visualization tool using charts and tables.'
 						badge1='JSX'
 					/>

@@ -82,17 +82,6 @@ function Dashboard() {
 					want to download the entire results table as a CSV file for filtering
 					and spreadsheet lookups.
 				</Text>
-				<Heading size='md'>Code</Heading>
-				<Flex>
-					<Gist id={gistData.id} />
-				</Flex>
-				<Heading size='md'>Video Preview</Heading>
-				<Flex>
-					<video
-						src={require("../public/images/projects/domainchecker/demo.mp4")}
-						controls
-					/>
-				</Flex>
 			</VStack>
 		</Flex>
 	)
