@@ -20,7 +20,7 @@ function DomainChecker() {
 	}
 
 	return (
-		<Flex w='750px' flexDirection='column'>
+		<Flex mw='750px' flexDirection='column'>
 			<VStack mt={10} spacing={6} alignItems='left'>
 				<Heading>Domain Checker</Heading>
 				<Image
