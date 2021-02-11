@@ -25,6 +25,14 @@ export default function Home() {
 			<Head>
 				<title>Stephen Rutherford</title>
 				<link rel='icon' href='/favicon.ico' />
+				<meta
+					name='description'
+					content='Portfolio website'
+					name='keywords'
+					content='Stephen Rutherford, Stephen, Rutherford, Fraud, Analyst, Investigator, Python, SQL, JSX'
+					name='author'
+					content='Stephen Rutherford'
+				/>
 			</Head>
 
 			<main className={styles.main}>
