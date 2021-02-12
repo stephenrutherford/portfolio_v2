@@ -16,13 +16,22 @@ import Card from "../components/Card"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import styles from "../styles/Home.module.css"
+import { NextSeo } from "next-seo"
 
 export default function Home() {
 	const { colorMode, toggleColorMode } = useColorMode()
 
 	return (
 		<div className={styles.container}>
-			<Head>
+			<NextSeo
+				title='Stephen Rutherford'
+				description='I am a Fraud Anaylst. Check out my projects!'
+				keywords='Stephen Rutherford, Stephen, Rutherford, Fraud, Risk, Analyst, Investigator, Python, SQL, JSX'
+				canonical='https://rutherford.dev/'
+				author='Stephen Rutherford'
+				robots='index, follow'
+			/>
+			{/* <Head>
 				<meta
 					name='description'
 					content='I am a Fraud Anaylst. Check out my projects!'
@@ -33,7 +42,7 @@ export default function Home() {
 				/>
 				<title>Stephen Rutherford</title>
 				<link rel='icon' href='/favicon.ico' />
-			</Head>
+			</Head> */}
 
 			<main className={styles.main}>
 				{/* Title */}
