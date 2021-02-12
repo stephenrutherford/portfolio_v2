@@ -34,16 +34,10 @@ function Header() {
 			<Spacer />
 			<Tooltip hasArrow label='Night/Day Mode!'>
 				<IconButton
-					icon={
-						colorMode === "light" ? (
-							<MoonIcon aria-label='Dark Mode' />
-						) : (
-							<SunIcon aria-label='Light Mode' />
-						)
-					}
+					aria-label='Color Mode Button'
+					icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
 					onClick={toggleColorMode}
 					variant='outline'
-					aria-label='Color Mode Button'
 				/>
 			</Tooltip>
 		</Flex>
