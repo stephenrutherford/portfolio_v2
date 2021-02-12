@@ -34,7 +34,13 @@ function Header() {
 			<Spacer />
 			<Tooltip hasArrow label='Night/Day Mode!'>
 				<IconButton
-					icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+					icon={
+						colorMode === "light" ? (
+							<MoonIcon aria-label='Dark Mode' />
+						) : (
+							<SunIcon aria-label='Light Mode' />
+						)
+					}
 					onClick={toggleColorMode}
 					variant='outline'
 					aria-label='Color Mode Button'

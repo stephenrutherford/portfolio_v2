@@ -8,8 +8,6 @@ export default class Document extends NextDocument {
 		return (
 			<Html lang='en'>
 				<Head>
-					<title>Stephen Rutherford</title>
-					<link rel='icon' href='/favicon.ico' />
 					<meta
 						name='Description'
 						content='I am a Fraud Anaylst. Check out my projects!'
