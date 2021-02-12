@@ -29,7 +29,7 @@ export default function Home() {
 				keywords='Stephen Rutherford, Stephen, Rutherford, Fraud, Risk, Analyst, Investigator, Python, SQL, JSX'
 				canonical='https://rutherford.dev/'
 				author='Stephen Rutherford'
-				robots='index, follow'
+				// robots='index, follow'
 			/>
 			{/* <Head>
 				<meta
