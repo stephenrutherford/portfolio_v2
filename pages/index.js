@@ -68,6 +68,13 @@ export default function Home() {
 						badge1='JSX'
 					/>
 					<Card
+						link='boilerplate'
+						image='images/projects/boilerplate/thumb.svg'
+						heading='Next.js Boilerplate Template'
+						description='A starter template for Next.js. Pre-configured with Chakra-UI, ESLint, and Prettier.'
+						badge1='JSX'
+					/>
+					<Card
 						link='webscraping'
 						image='images/projects/webscraping/thumb.svg'
 						heading='Cats for Adoption: Web Scraping and Analysis'
