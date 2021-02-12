@@ -48,9 +48,16 @@ function Boilerplate() {
 			<VStack mt={10} spacing={4} alignItems='left'>
 				<Heading size='md'>Overview</Heading>
 				<Text>
-					This is a Next.js boilerplate template bootstrapped with
-					create-next-app. Pre-configured with Chakra UI library and ESLint with
-					Prettier.
+					This is a{" "}
+					<Link href='https://nextjs.org/' isExternal>
+						Next.js
+					</Link>{" "}
+					boilerplate template bootstrapped with create-next-app. Pre-configured
+					with{" "}
+					<Link href='https://chakra-ui.com/' isExternal>
+						Chakra-UI
+					</Link>{" "}
+					library and ESLint with Prettier.
 				</Text>
 				<Heading size='md'>Getting Started</Heading>
 
@@ -62,6 +69,7 @@ function Boilerplate() {
 				<Text>First, install ESLint globally:</Text>
 				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
 					<Text
+						as='samp'
 						className={styles.code}
 						Color={colorMode === "light" ? "gray.700" : "gray.300"}
 					>
@@ -71,6 +79,7 @@ function Boilerplate() {
 				<Text>Next, start your Next.js app with the following command:</Text>
 				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
 					<Text
+						as='samp'
 						className={styles.code}
 						Color={colorMode === "light" ? "gray.700" : "gray.300"}
 					>
@@ -81,6 +90,7 @@ function Boilerplate() {
 				<Text>Finally, open the Workspace:</Text>
 				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
 					<Text
+						as='samp'
 						className={styles.code}
 						Color={colorMode === "light" ? "gray.700" : "gray.300"}
 					>
@@ -91,6 +101,7 @@ function Boilerplate() {
 				<Heading size='md'>Deployment</Heading>
 				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
 					<Text
+						as='samp'
 						className={styles.code}
 						Color={colorMode === "light" ? "gray.700" : "gray.300"}
 					>
@@ -99,6 +110,7 @@ function Boilerplate() {
 				</Flex>
 				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
 					<Text
+						as='samp'
 						className={styles.code}
 						Color={colorMode === "light" ? "gray.700" : "gray.300"}
 					>
