@@ -11,11 +11,11 @@ export default class Document extends NextDocument {
 					<title>Stephen Rutherford</title>
 					<link rel='icon' href='/favicon.ico' />
 					<meta
-						name='description'
+						name='Description'
 						content='I am a Fraud Anaylst. Check out my projects!'
-						name='keywords'
+						name='Keywords'
 						content='Stephen Rutherford, Stephen, Rutherford, Fraud, Risk, Analyst, Investigator, Python, SQL, JSX'
-						name='author'
+						name='Author'
 						content='Stephen Rutherford'
 					/>
 				</Head>{" "}

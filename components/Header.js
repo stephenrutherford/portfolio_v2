@@ -37,7 +37,7 @@ function Header() {
 					icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
 					onClick={toggleColorMode}
 					variant='outline'
-					name='colorModeButton'
+					aria-label='Color Mode Button'
 				/>
 			</Tooltip>
 		</Flex>
