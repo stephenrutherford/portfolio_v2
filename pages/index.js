@@ -23,8 +23,6 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Stephen Rutherford</title>
-				<link rel='icon' href='/favicon.ico' />
 				<meta
 					name='description'
 					content='I am a Fraud Anaylst. Check out my projects!'
@@ -33,6 +31,8 @@ export default function Home() {
 					name='author'
 					content='Stephen Rutherford'
 				/>
+				<title>Stephen Rutherford</title>
+				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
 			<main className={styles.main}>
