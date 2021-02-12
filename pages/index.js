@@ -27,9 +27,9 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 				<meta
 					name='description'
-					content='Portfolio website'
+					content='I am a Fraud Anaylst. Check out my projects!'
 					name='keywords'
-					content='Stephen Rutherford, Stephen, Rutherford, Fraud, Analyst, Investigator, Python, SQL, JSX'
+					content='Stephen Rutherford, Stephen, Rutherford, Fraud, Risk, Analyst, Investigator, Python, SQL, JSX'
 					name='author'
 					content='Stephen Rutherford'
 				/>
