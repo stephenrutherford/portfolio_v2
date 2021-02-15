@@ -23,17 +23,7 @@ export default function DomainChecker() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className={styles.main}>
-				{/* Title */}
-				<Header />
-
-				{/* Project Content */}
-				<DC />
-			</main>
-
-			<footer className={styles.footer}>
-				<Footer />
-			</footer>
+			<DC />
 		</div>
 	)
 }

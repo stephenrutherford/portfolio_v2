@@ -12,11 +12,21 @@ function Footer() {
 	const { colorMode, toggleColorMode } = useColorMode()
 
 	return (
-		<Flex flexDirection='column' className={styles.footer__title}>
+		<Flex
+			flexDirection='column'
+			justifyContent='center'
+			alignItems='center'
+			w='100vw'
+			h='100px'
+			borderTop='1px solid #eaeaea'
+			margin='1rem 0'
+		>
 			<Heading
 				fontSize='xl'
-				ml='2'
+				// ml='2'
 				color={colorMode === "light" ? "gray.600" : "gray.200"}
+				letterSpacing='0.2rem'
+				margin='1rem 0'
 			>
 				GET IN TOUCH
 			</Heading>

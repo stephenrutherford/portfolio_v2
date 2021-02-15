@@ -19,8 +19,9 @@ function Header() {
 		<Flex className={styles.title} p={0}>
 			<Avatar
 				size='lg'
+				bg='blue.500'
 				name='Stephen Rutherford'
-				// src='https://bit.ly/code-beast'
+				src='images/avatar.svg'
 			/>
 			<Heading
 				fontSize='xl'

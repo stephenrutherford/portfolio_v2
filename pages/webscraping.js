@@ -23,17 +23,7 @@ export default function WebScraping() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<main className={styles.main}>
-				{/* Title */}
-				<Header />
-
-				{/* Project Content */}
-				<WS />
-			</main>
-
-			<footer className={styles.footer}>
-				<Footer />
-			</footer>
+			<WS />
 		</div>
 	)
 }

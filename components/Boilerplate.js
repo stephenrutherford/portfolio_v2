@@ -1,7 +1,7 @@
 import {
 	Heading,
 	Flex,
-	Spacer,
+	Code,
 	Avatar,
 	useColorMode,
 	IconButton,
@@ -66,57 +66,22 @@ function Boilerplate() {
 					<li>ESLint</li>
 					<li>Prettier </li>
 				</Text>
+
 				<Text>First, install ESLint globally:</Text>
-				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
-					<Text
-						as='samp'
-						className={styles.code}
-						Color={colorMode === "light" ? "gray.700" : "gray.300"}
-					>
-						npm i -G eslint
-					</Text>
-				</Flex>
+				<Code p='2'> npm i -G eslint</Code>
+
 				<Text>Next, start your Next.js app with the following command:</Text>
-				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
-					<Text
-						as='samp'
-						className={styles.code}
-						Color={colorMode === "light" ? "gray.700" : "gray.300"}
-					>
-						npx create-next-app yourAppName -e
-						https://github.com/stephenrutherford/NextJs-Chakra-Prettier-Boilerplate
-					</Text>
-				</Flex>
+				<Code p='2'>
+					npx create-next-app yourAppName -e
+					https://github.com/stephenrutherford/NextJs-Chakra-Prettier-Boilerplate
+				</Code>
+
 				<Text>Finally, open the Workspace:</Text>
-				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
-					<Text
-						as='samp'
-						className={styles.code}
-						Color={colorMode === "light" ? "gray.700" : "gray.300"}
-					>
-						File > Open Workspace...
-					</Text>
-				</Flex>
+				<Code p='2'> File > Open Workspace...</Code>
 
 				<Heading size='md'>Deployment</Heading>
-				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
-					<Text
-						as='samp'
-						className={styles.code}
-						Color={colorMode === "light" ? "gray.700" : "gray.300"}
-					>
-						cd yourAppName
-					</Text>
-				</Flex>
-				<Flex bgColor={colorMode === "light" ? "gray.300" : "gray.700"}>
-					<Text
-						as='samp'
-						className={styles.code}
-						Color={colorMode === "light" ? "gray.700" : "gray.300"}
-					>
-						npm run dev
-					</Text>
-				</Flex>
+				<Code p='2'> cd yourAppName</Code>
+				<Code p='2'> npm run dev</Code>
 			</VStack>
 		</Flex>
 	)
