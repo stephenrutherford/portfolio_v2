@@ -25,15 +25,16 @@ function Footer() {
 				fontSize='xl'
 				// ml='2'
 				color={colorMode === "light" ? "gray.600" : "gray.200"}
-				letterSpacing='0.2rem'
-				margin='1rem 0'
+				letterSpacing='0.4rem'
+				margin='1.5rem 0'
 			>
 				GET IN TOUCH
 			</Heading>
-			<Flex>
+			<Flex flexDireciton='column'>
 				<Stack direction='row'>
 					<Link href='mailto:stephen@rutherford.dev'>
 						<Image
+							mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							// src='images/email.svg'
@@ -47,6 +48,7 @@ function Footer() {
 					</Link>
 					<Link href='https://github.com/stephenrutherford' isExternal>
 						<Image
+							mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							src={
@@ -62,6 +64,7 @@ function Footer() {
 						isExternal
 					>
 						<Image
+							mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							src={
