@@ -16,10 +16,11 @@ function Footer() {
 			flexDirection='column'
 			justifyContent='center'
 			alignItems='center'
-			w='100vw'
+			minW='100vw'
 			h='120px'
 			borderTop='1px solid #eaeaea'
-			margin='1rem'
+			margin='0rem'
+			pb={4}
 		>
 			<Heading
 				fontSize='xl'
@@ -34,7 +35,7 @@ function Footer() {
 				<Stack direction='row'>
 					<Link href='mailto:stephen@rutherford.dev'>
 						<Image
-							mr={4}
+							// mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							// src='images/email.svg'
@@ -48,7 +49,7 @@ function Footer() {
 					</Link>
 					<Link href='https://github.com/stephenrutherford' isExternal>
 						<Image
-							mr={4}
+							// mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							src={
@@ -64,7 +65,7 @@ function Footer() {
 						isExternal
 					>
 						<Image
-							mr={4}
+							// mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							src={

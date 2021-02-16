@@ -12,6 +12,7 @@ function Layout({ children }) {
 			flexDirection='column'
 			justifyContent='center'
 			alignItems='center'
+			overflowX='hidden'
 		>
 			<Flex
 				padding='5rem 0'
@@ -29,12 +30,5 @@ function Layout({ children }) {
 		</Flex>
 	)
 }
-
-// min-height: 100vh;
-// padding: 4 0.5rem;
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-// align-items: center;
 
 export default Layout
