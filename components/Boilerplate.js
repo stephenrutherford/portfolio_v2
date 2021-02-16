@@ -4,7 +4,7 @@ import {
 	Code,
 	Avatar,
 	useColorMode,
-	IconButton,
+	useBreakpointValue,
 	Link,
 	VStack,
 	Image,
@@ -14,6 +14,18 @@ import {
 
 function Boilerplate() {
 	const { colorMode, toggleColorMode } = useColorMode()
+
+	const gitURL = useBreakpointValue({
+		base: "https://git.io/Jt1nK",
+		xl:
+			"https://github.com/stephenrutherford/NextJs-Chakra-Prettier-Boilerplate",
+		lg:
+			"https://github.com/stephenrutherford/NextJs-Chakra-Prettier-Boilerplate",
+		md:
+			"https://github.com/stephenrutherford/NextJs-Chakra-Prettier-Boilerplate",
+		sm:
+			"https://github.com/stephenrutherford/NextJs-Chakra-Prettier-Boilerplate",
+	})
 
 	return (
 		<Flex maxW='750px' flexDirection='column'>
@@ -71,10 +83,7 @@ function Boilerplate() {
 				<Code p='2'> npm i -G eslint</Code>
 
 				<Text>Next, start your Next.js app with the following command:</Text>
-				<Code p='2'>
-					npx create-next-app yourAppName -e
-					https://github.com/stephenrutherford/NextJs-Chakra-Prettier-Boilerplate
-				</Code>
+				<Code p='2'>npx create-next-app yourAppName -e {gitURL}</Code>
 
 				<Text>Finally, open the Workspace:</Text>
 				<Code p='2'> File > Open Workspace...</Code>
