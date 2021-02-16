@@ -13,7 +13,7 @@ import {
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import BP from "../components/Boilerplate"
-import styles from "../styles/Home.module.css"
+// import styles from "../styles/Home.module.css"
 
 export default function Boilerplate() {
 	return (
@@ -22,7 +22,6 @@ export default function Boilerplate() {
 				<title>Stephen Rutherford</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
 			<BP />
 		</div>
 	)

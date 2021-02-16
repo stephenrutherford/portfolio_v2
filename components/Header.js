@@ -16,7 +16,7 @@ function Header() {
 	const { colorMode, toggleColorMode } = useColorMode()
 
 	return (
-		<Flex className={styles.title} p={0}>
+		<Flex p={0} alignItems='center'>
 			<Avatar
 				size='lg'
 				bg='blue.500'
@@ -28,7 +28,14 @@ function Header() {
 				ml='2'
 				color={colorMode === "light" ? "gray.600" : "gray.200"}
 			>
-				<Link href='/' style={{ color: "inherit", textDecoration: "inherit" }}>
+				<Link
+					href='/'
+					style={{
+						color: "inherit",
+						textDecoration: "inherit",
+						letterSpacing: "0.4rem",
+					}}
+				>
 					STEPHEN RUTHERFORD
 				</Link>
 			</Heading>

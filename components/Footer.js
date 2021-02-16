@@ -17,9 +17,9 @@ function Footer() {
 			justifyContent='center'
 			alignItems='center'
 			w='100vw'
-			h='100px'
+			h='120px'
 			borderTop='1px solid #eaeaea'
-			margin='1rem 0'
+			margin='1rem'
 		>
 			<Heading
 				fontSize='xl'

@@ -10,7 +10,7 @@ import {
 	Image,
 	Text,
 } from "@chakra-ui/react"
-import styles from "../styles/Home.module.css"
+// import styles from "../styles/Home.module.css"
 
 function Boilerplate() {
 	const { colorMode, toggleColorMode } = useColorMode()
