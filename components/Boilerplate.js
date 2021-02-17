@@ -2,7 +2,9 @@ import {
 	Heading,
 	Flex,
 	Code,
-	Avatar,
+	List,
+	ListItem,
+	UnorderedList,
 	useColorMode,
 	useBreakpointValue,
 	Link,
@@ -10,7 +12,6 @@ import {
 	Image,
 	Text,
 } from "@chakra-ui/react"
-// import styles from "../styles/Home.module.css"
 
 function Boilerplate() {
 	const { colorMode, toggleColorMode } = useColorMode()
@@ -28,7 +29,7 @@ function Boilerplate() {
 	})
 
 	return (
-		<Flex maxW='750px' flexDirection='column'>
+		<Flex maxW='700px' flexDirection='column'>
 			<VStack mt={10} spacing={6} alignItems='left'>
 				<Heading>Next.js Boilerplate</Heading>
 				<Image
@@ -37,7 +38,9 @@ function Boilerplate() {
 					border='1px solid lightgray'
 					borderRadius='lg'
 					overflow='hidden'
-				></Image>
+				/>
+				{/* Test */}
+
 				<Flex alignItems='center'>
 					<Image
 						boxSize='40px'
@@ -74,10 +77,10 @@ function Boilerplate() {
 				<Heading size='md'>Getting Started</Heading>
 
 				<Text>VSCode Extension Requirements</Text>
-				<Text>
-					<li>ESLint</li>
-					<li>Prettier </li>
-				</Text>
+				<UnorderedList pl={8}>
+					<ListItem>ESLint</ListItem>
+					<ListItem>Prettier</ListItem>
+				</UnorderedList>
 
 				<Text>First, install ESLint globally:</Text>
 				<Code p='2'> npm i -G eslint</Code>

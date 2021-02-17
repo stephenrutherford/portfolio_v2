@@ -17,25 +17,27 @@ function Footer() {
 			justifyContent='center'
 			alignItems='center'
 			minW='100vw'
-			h='120px'
+			h='100%'
 			borderTop='1px solid #eaeaea'
 			margin='0rem'
-			pb={4}
+			// pb={0}
+			// p='1.5rem'
 		>
 			<Heading
 				fontSize='xl'
 				// ml='2'
 				color={colorMode === "light" ? "gray.600" : "gray.200"}
 				letterSpacing='0.4rem'
-				margin='1.5rem 0'
+				pt={4}
+				// margin='1.5rem 0'
 			>
 				GET IN TOUCH
 			</Heading>
 			<Flex flexDireciton='column'>
-				<Stack direction='row'>
+				<Stack direction='row' pt={4} pb={4}>
 					<Link href='mailto:stephen@rutherford.dev'>
 						<Image
-							// mr={4}
+							mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							// src='images/email.svg'
@@ -49,7 +51,7 @@ function Footer() {
 					</Link>
 					<Link href='https://github.com/stephenrutherford' isExternal>
 						<Image
-							// mr={4}
+							mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							src={
@@ -65,7 +67,7 @@ function Footer() {
 						isExternal
 					>
 						<Image
-							// mr={4}
+							mr={4}
 							boxSize='40px'
 							objectFit='cover'
 							src={

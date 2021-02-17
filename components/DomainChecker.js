@@ -4,7 +4,9 @@ import {
 	Spacer,
 	Avatar,
 	useColorMode,
-	IconButton,
+	List,
+	ListItem,
+	UnorderedList,
 	Link,
 	VStack,
 	Image,
@@ -73,10 +75,17 @@ function DomainChecker() {
 					web-scrape from the website check-mail.org. The user can paste in the
 					domains that they want to check, and the App will render a results
 					table with two specific columns that contain data of interest.
-					<li>Disposable - If the domain is considered disposable.</li>
-					<li>
+				</Text>
+				<UnorderedList pl={8}>
+					<ListItem>
+						Disposable - If the domain is considered disposable.
+					</ListItem>
+					<ListItem>
 						Valid - If thedomain is able to receive email, or is high risk.
-					</li>
+					</ListItem>
+				</UnorderedList>
+
+				<Text>
 					An export button was also included for larger querues. The user may
 					want to download the entire results table as a CSV file for filtering
 					and spreadsheet lookups.

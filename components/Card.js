@@ -8,6 +8,8 @@ import {
 	Link,
 	Badge,
 	useBreakpointValue,
+	LinkBox,
+	LinkOverlay,
 } from "@chakra-ui/react"
 import styles from "../styles/Home.module.css"
 
@@ -21,7 +23,8 @@ function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
 	})
 
 	return (
-		<Link href={link} style={{ color: "inherit", textDecoration: "inherit" }}>
+		// <Link href={link} style={{ color: "inherit", textDecoration: "inherit" }}>
+		<LinkBox as='article'>
 			<Flex
 				width='100%'
 				borderWidth='1px'
@@ -41,7 +44,9 @@ function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
 					/>
 				</Flex>
 				<Flex flex='1' flexDirection='column' p={2} maxWidth='400px'>
-					<Heading size='md'>{heading}</Heading>
+					<Heading size='md'>
+						<LinkOverlay href={link}>{heading}</LinkOverlay>
+					</Heading>
 					<Text noOfLines={3} isTruncated>
 						{description}
 					</Text>
@@ -89,7 +94,8 @@ function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
 					</HStack>
 				</Flex>
 			</Flex>
-		</Link>
+		</LinkBox>
+		// </Link>
 	)
 }
 

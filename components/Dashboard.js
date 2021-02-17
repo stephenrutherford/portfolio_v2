@@ -1,8 +1,9 @@
 import {
 	Heading,
 	Flex,
-	Spacer,
-	Avatar,
+	List,
+	UnorderedList,
+	ListItem,
 	useColorMode,
 	IconButton,
 	Link,
@@ -20,7 +21,7 @@ function Dashboard() {
 	}
 
 	return (
-		<Flex maxW='750px' flexDirection='column'>
+		<Flex maxW='700px' flexDirection='column'>
 			<VStack mt={10} spacing={6} alignItems='left'>
 				<Heading>Fraud Dashboard</Heading>
 				<Image
@@ -59,7 +60,7 @@ function Dashboard() {
 				</Flex>
 			</VStack>
 			<VStack mt={10} spacing={4} alignItems='left'>
-				<Text as='mark'>
+				<Text as='mark' p={2}>
 					This dashboard is under active development. The Live Demo may have
 					incomplete links or features.
 				</Text>
@@ -69,19 +70,25 @@ function Dashboard() {
 					a data visualization tool using charts and tables.
 				</Text>
 				<Heading size='md'>Features</Heading>
-				<Text>
-					The app was built in Django using Python where it will perform a
-					web-scrape from the website check-mail.org. The user can paste in the
-					domains that they want to check, and the App will render a results
-					table with two specific columns that contain data of interest.
-					<li>Disposable - If the domain is considered disposable.</li>
-					<li>
-						Valid - If thedomain is able to receive email, or is high risk.
-					</li>
-					An export button was also included for larger querues. The user may
-					want to download the entire results table as a CSV file for filtering
-					and spreadsheet lookups.
-				</Text>
+				<Text>Live data is injested from JSON</Text>
+				<Heading size='sm'>Dashboards</Heading>
+				<UnorderedList pl={8}>
+					<ListItem>Fraud Metrics</ListItem>
+					<ListItem>Sales</ListItem>
+					<ListItem>Chargebacks</ListItem>
+					<ListItem>Rules/policies</ListItem>
+				</UnorderedList>
+				<Heading size='sm'>Operations</Heading>
+				<UnorderedList pl={8}>
+					<ListItem>Tasks</ListItem>
+					<ListItem>Calendar</ListItem>
+					<ListItem>Documents</ListItem>
+				</UnorderedList>
+				<Heading size='sm'>Other</Heading>
+				<UnorderedList pl={8}>
+					<ListItem>Settings</ListItem>
+					<ListItem>Changelog</ListItem>
+				</UnorderedList>
 			</VStack>
 		</Flex>
 	)
