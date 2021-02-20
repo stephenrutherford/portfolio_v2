@@ -29,12 +29,12 @@ function Boilerplate() {
 	})
 
 	return (
-		<Flex maxW='700px' flexDirection='column'>
+		<Flex maxW='750px' flexDirection='column'>
 			<VStack mt={10} spacing={6} alignItems='left'>
 				<Heading>Next.js Boilerplate</Heading>
 				<Image
 					backgroundColor='white'
-					src='images/projects/boilerplate/promo.svg'
+					src='images/projects/boilerplate/promo.webp'
 					border='1px solid lightgray'
 					borderRadius='lg'
 					overflow='hidden'
@@ -47,8 +47,8 @@ function Boilerplate() {
 						objectFit='cover'
 						src={
 							colorMode === "light"
-								? "images/github.svg"
-								: "images/github_2.svg"
+								? "images/github.webp"
+								: "images/github_2.webp"
 						}
 						alt='GitHub'
 					/>

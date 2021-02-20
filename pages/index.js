@@ -41,7 +41,7 @@ export default function Home() {
 			<VStack mt={10} spacing={6}>
 				<Card
 					link='domainchecker'
-					image='images/projects/domainchecker/thumb.svg'
+					image='images/projects/domainchecker/thumb.webp'
 					heading='Domain Checker'
 					description='A fraud investigation tool used to check for invalid and disposable email domains.'
 					badge1='PYTHON'
@@ -49,7 +49,7 @@ export default function Home() {
 				/>
 				<Card
 					link='dashboard'
-					image='images/projects/dashboard/thumb.svg'
+					image='images/projects/dashboard/thumb.webp'
 					heading='Fraud Dashboard'
 					description='	A fraud metrics and sales dashboard created with Next.js. Designed as
 						a data visualization tool using charts and tables.'
@@ -57,14 +57,14 @@ export default function Home() {
 				/>
 				<Card
 					link='boilerplate'
-					image='images/projects/boilerplate/thumb.svg'
+					image='images/projects/boilerplate/thumb.webp'
 					heading='Next.js Boilerplate Template'
 					description='A starter template for Next.js. Pre-configured with Chakra-UI, ESLint, and Prettier.'
 					badge1='JSX'
 				/>
 				<Card
 					link='webscraping'
-					image='images/projects/webscraping/thumb.svg'
+					image='images/projects/webscraping/thumb.webp'
 					heading='Cats for Adoption: Web Scraping and Analysis'
 					description='A data analysis of cats available for adoption using Python web scraping, PostgreSQL, and Pandas.'
 					badge1='PYTHON'

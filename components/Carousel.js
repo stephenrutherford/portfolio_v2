@@ -33,7 +33,7 @@ function Carousel() {
 	})
 
 	return (
-		<Flex flexDirection='column'>
+		<Flex flexDirection='column' maxW='750px'>
 			<Flex pt={4} pb={1} display={desktopDisplayVariant}>
 				<Heading fontSize='3xl'>Hello, I like to work with</Heading>
 				<Heading fontSize='3xl'>

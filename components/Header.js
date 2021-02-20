@@ -16,12 +16,12 @@ function Header() {
 	const { colorMode, toggleColorMode } = useColorMode()
 
 	return (
-		<Flex p={0} alignItems='center'>
+		<Flex p={0} alignItems='center' maxW='750px'>
 			<Avatar
 				size='lg'
 				bg='blue.500'
 				name='Stephen Rutherford'
-				src='images/avatar.svg'
+				src='images/avatar.webp'
 			/>
 			<Heading
 				fontSize='xl'

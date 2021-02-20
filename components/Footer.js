@@ -43,8 +43,8 @@ function Footer() {
 							// src='images/email.svg'
 							src={
 								colorMode === "light"
-									? "images/email.svg"
-									: "images/email_2.svg"
+									? "images/email.webp"
+									: "images/email_2.webp"
 							}
 							alt='Email'
 						/>
@@ -56,8 +56,8 @@ function Footer() {
 							objectFit='cover'
 							src={
 								colorMode === "light"
-									? "images/github.svg"
-									: "images/github_2.svg"
+									? "images/github.webp"
+									: "images/github_2.webp"
 							}
 							alt='GitHub'
 						/>
@@ -72,8 +72,8 @@ function Footer() {
 							objectFit='cover'
 							src={
 								colorMode === "light"
-									? "images/linkedin.svg"
-									: "images/linkedin_2.svg"
+									? "images/linkedin.webp"
+									: "images/linkedin_2.webp"
 							}
 							alt='LinkedIn'
 						/>

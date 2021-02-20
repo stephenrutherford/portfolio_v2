@@ -11,6 +11,7 @@ import {
 	LinkBox,
 	LinkOverlay,
 } from "@chakra-ui/react"
+import { transform } from "framer-motion"
 import styles from "../styles/Home.module.css"
 
 function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
@@ -38,6 +39,7 @@ function Card({ link, image, heading, description, badge1, badge2, badge3 }) {
 				<Flex>
 					<Image
 						width='350px'
+						height='150px'
 						objectFit='cover'
 						src={image}
 						alt='Project Image'

@@ -27,7 +27,7 @@ function DomainChecker() {
 				<Heading>Domain Checker</Heading>
 				<Image
 					backgroundColor='white'
-					src='images/projects/domainchecker/promo.svg'
+					src='images/projects/domainchecker/promo.webp'
 					border='1px solid lightgray'
 					borderRadius='lg'
 					overflow='hidden'
@@ -38,8 +38,8 @@ function DomainChecker() {
 						objectFit='cover'
 						src={
 							colorMode === "light"
-								? "images/github.svg"
-								: "images/github_2.svg"
+								? "images/github.webp"
+								: "images/github_2.webp"
 						}
 						alt='GitHub'
 					/>
@@ -55,7 +55,9 @@ function DomainChecker() {
 					<Image
 						boxSize='40px'
 						objectFit='cover'
-						src={colorMode === "light" ? "images/web.svg" : "images/web_2.svg"}
+						src={
+							colorMode === "light" ? "images/web.webp" : "images/web_2.webp"
+						}
 						alt='Live Demo'
 					/>
 					<Link href='https://fps-domain-checker.herokuapp.com/' isExternal>

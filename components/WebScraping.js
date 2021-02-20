@@ -20,12 +20,12 @@ function WebScraping() {
 	}
 
 	return (
-		<Flex maxW='700px' flexDirection='column'>
+		<Flex maxW='750px' flexDirection='column'>
 			<VStack mt={10} spacing={6} alignItems='left'>
 				<Heading>Web Scraping</Heading>
 				<Image
 					backgroundColor='white'
-					src='images/projects/webscraping/promo.svg'
+					src='images/projects/webscraping/promo.webp'
 					border='1px solid lightgray'
 					borderRadius='lg'
 					overflow='hidden'
@@ -36,8 +36,8 @@ function WebScraping() {
 						objectFit='cover'
 						src={
 							colorMode === "light"
-								? "images/github.svg"
-								: "images/github_2.svg"
+								? "images/github.webp"
+								: "images/github_2.webp"
 						}
 						alt='GitHub'
 					/>
@@ -53,7 +53,9 @@ function WebScraping() {
 					<Image
 						boxSize='40px'
 						objectFit='cover'
-						src={colorMode === "light" ? "images/web.svg" : "images/web_2.svg"}
+						src={
+							colorMode === "light" ? "images/web.webp" : "images/web_2.webp"
+						}
 						alt='Live Demo'
 					/>
 					<Link
