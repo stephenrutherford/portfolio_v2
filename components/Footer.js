@@ -33,7 +33,7 @@ function Footer() {
 			>
 				GET IN TOUCH
 			</Heading>
-			<Flex flexDireciton='column'>
+			<Flex>
 				<Stack direction='row' pt={4} pb={4}>
 					<Link href='mailto:stephen@rutherford.dev'>
 						<Image
