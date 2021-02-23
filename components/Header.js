@@ -40,7 +40,7 @@ function Header() {
 				</Link>
 			</Heading>
 			<Spacer />
-			<Tooltip hasArrow label='Night/Day Mode!'>
+			<Tooltip hasArrow label='Night/Day Mode!' defaultIsOpen>
 				<IconButton
 					aria-label='Color Mode Button'
 					icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}

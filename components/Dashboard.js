@@ -1,15 +1,21 @@
 import {
 	Heading,
 	Flex,
-	List,
 	UnorderedList,
 	ListItem,
 	useColorMode,
-	IconButton,
 	Link,
 	VStack,
 	Image,
 	Text,
+	Table,
+	Thead,
+	Tbody,
+	Tfoot,
+	Tr,
+	Th,
+	Td,
+	TableCaption,
 } from "@chakra-ui/react"
 import Gist from "react-gist"
 
@@ -42,7 +48,10 @@ function Dashboard() {
 						}
 						alt='GitHub'
 					/>
-					<Link href='#' isExternal>
+					<Link
+						href='https://github.com/stephenrutherford/fraud-dashboard'
+						isExternal
+					>
 						<Text pl={4}>GitHub</Text>
 					</Link>
 				</Flex>
@@ -56,7 +65,7 @@ function Dashboard() {
 						}
 						alt='Live Demo'
 					/>
-					<Link href='#' isExternal>
+					<Link href='https://fraud-dashboard.vercel.app/' isExternal>
 						<Text pl={4}>Live Demo</Text>
 					</Link>
 				</Flex>
@@ -72,25 +81,46 @@ function Dashboard() {
 					a data visualization tool using charts and tables.
 				</Text>
 				<Heading size='md'>Features</Heading>
-				<Text>Live data is injested from JSON</Text>
+				<UnorderedList pl={8}>
+					<ListItem>Live data is injested from JSON.</ListItem>
+					<ListItem>Real-Time alerts with emails.</ListItem>
+					<ListItem>Group data sharing and chat communication.</ListItem>
+					<ListItem>
+						Calendar events for active and upcoming promotions.
+					</ListItem>
+				</UnorderedList>
 				<Heading size='sm'>Dashboards</Heading>
-				<UnorderedList pl={8}>
-					<ListItem>Fraud Metrics</ListItem>
-					<ListItem>Sales</ListItem>
-					<ListItem>Chargebacks</ListItem>
-					<ListItem>Rules/policies</ListItem>
-				</UnorderedList>
-				<Heading size='sm'>Operations</Heading>
-				<UnorderedList pl={8}>
-					<ListItem>Tasks</ListItem>
-					<ListItem>Calendar</ListItem>
-					<ListItem>Documents</ListItem>
-				</UnorderedList>
-				<Heading size='sm'>Other</Heading>
-				<UnorderedList pl={8}>
-					<ListItem>Settings</ListItem>
-					<ListItem>Changelog</ListItem>
-				</UnorderedList>
+				<Table variant='simple'>
+					<Thead>
+						<Tr>
+							<Th>Primary</Th>
+							<Th>Operations</Th>
+							<Th>Other</Th>
+						</Tr>
+					</Thead>
+					<Tbody>
+						<Tr>
+							<Td>Fraud Metrics</Td>
+							<Td>Tasks</Td>
+							<Td>Settings</Td>
+						</Tr>
+						<Tr>
+							<Td>Sales</Td>
+							<Td>Calendar</Td>
+							<Td>Changelog</Td>
+						</Tr>
+						<Tr>
+							<Td>Chargebacks</Td>
+							<Td>Documents</Td>
+							<Td></Td>
+						</Tr>
+						<Tr>
+							<Td>Rules/policies</Td>
+							<Td></Td>
+							<Td></Td>
+						</Tr>
+					</Tbody>
+				</Table>
 			</VStack>
 		</Flex>
 	)
