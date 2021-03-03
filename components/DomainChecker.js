@@ -76,14 +76,15 @@ function DomainChecker() {
 					The app was built in Django using Python where it will perform a
 					web-scrape from the website check-mail.org. The user can paste in the
 					domains that they want to check, and the App will render a results
-					table with two specific columns that contain data of interest.
+					table with additional columns that contain data of interest.
 				</Text>
 				<UnorderedList pl={8}>
 					<ListItem>
-						Disposable - If the domain is considered disposable.
+						Type - If the domain is considered disposable or not.
 					</ListItem>
 					<ListItem>
-						Valid - If thedomain is able to receive email, or is high risk.
+						Block - The domain is not disposable, but is high risk and should be
+						blocked anyway.
 					</ListItem>
 				</UnorderedList>
 
@@ -100,6 +101,13 @@ function DomainChecker() {
 				<Flex>
 					<video
 						src={require("../public/images/projects/domainchecker/demo.mp4")}
+						controls
+					/>
+				</Flex>
+				<Heading size='md'>Version 2.0 Preview</Heading>
+				<Flex>
+					<video
+						src={require("../public/images/projects/domainchecker/demo_v2.mp4")}
 						controls
 					/>
 				</Flex>
